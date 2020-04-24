@@ -1,0 +1,15 @@
+[package]
+name = "rust_kerl"
+version = "0.1.0"
+authors = ["YuWeiWu <wusyong9104@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "rust_kerl"
+crate-type = ["cdylib"] 
+
+[dependencies]
+libc = "0.2"
+bee-crypto = { path = "../../../../../../bee-p/bee-crypto" }
+bee-ternary = { path = "../../../../../../bee-p/bee-ternary" }

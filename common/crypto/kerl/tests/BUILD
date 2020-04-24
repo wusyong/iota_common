@@ -16,6 +16,13 @@ cc_test(
     deps = [
         "//common/crypto/kerl",
         "//common/trinary:trit_tryte",
+        ":librust_kerl",
         "@unity",
     ],
+)
+
+cc_import(
+  name = "librust_kerl",
+  hdrs = ["librust_kerl.h"],
+  shared_library = "rust_kerl/target/release/librust_kerl.so",
 )
