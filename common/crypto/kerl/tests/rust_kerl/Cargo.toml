@@ -11,5 +11,5 @@ crate-type = ["cdylib"]
 
 [dependencies]
 libc = "0.2"
-bee-crypto = { path = "../../../../../../bee-p/bee-crypto" }
-bee-ternary = { path = "../../../../../../bee-p/bee-ternary" }
+bee-crypto = { git = "https://github.com/Alex6323/bee-p" }
+bee-ternary = { git = "https://github.com/Alex6323/bee-p" }
